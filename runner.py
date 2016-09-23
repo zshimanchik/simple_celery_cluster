@@ -1,7 +1,6 @@
 from tasks import execute
 from random import randint
 import time
-from celery.signals import task_success
 
 
 def main(args):
@@ -24,5 +23,5 @@ def main(args):
     print("done")
 
 
-args = [randint(10**2,10**3) for _ in range(3)]
+args = [randint(10**3,10**5) for _ in range(10)]
 main(args)
